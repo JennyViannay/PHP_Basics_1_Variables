@@ -3,7 +3,6 @@ Pour te repérer dans cette page de code, tu peux faire une recherche des mots c
 ETAPE_1, ETAPE_2, ETAPE_3, ETAPE_4, ETAPE_5, _SUPERBONUS, _PUSH, _EXEMPLE, _ICI TON CODE
 afin de te deplacer plus facilement sans te perdre 
 ------------------------------------------------------------------------------------------------->
-
 <?php include('head.php'); ?>
 
 <div class="dropdown" id="menu">
@@ -61,25 +60,25 @@ afin de te deplacer plus facilement sans te perdre
                 </small>
                 <ol>
                     <li>
-                        <code>$<!-- NOM VARIABLE --></code>
+                        <code>$id</code>
                     </li>
                     <li>
-                        <code>$<!-- NOM VARIABLE --></code>
+                        <code>$color</code>
                     </li>
                     <li>
-                        <code>$<!-- NOM VARIABLE --></code>
+                        <code>$lifeTime</code>
                     </li>
                     <li>
-                        <code>$<!-- NOM VARIABLE --></code>
+                        <code>$job</code>
                     </li>
                     <li>
-                        <code>$<!-- NOM VARIABLE --></code>
+                        <code>$wish</code>
                     </li>
                     <li>
-                        <code>$<!-- NOM VARIABLE --></code>
+                        <code>$rickIvention</code>
                     </li>
                     <li>
-                        <code>$<!-- NOM VARIABLE --></code>
+                        <code>$distinctSign</code>
                     </li>
                 </ol>
                 <div class="progress">
@@ -130,12 +129,33 @@ afin de te deplacer plus facilement sans te perdre
                 <h5 class="display-6">Solution :</h5>
                 <div class="alert alert-my-dark" role="alert">
                     <?php
-                        echo "<span class='red'>~</span> _ICI TON CODE PHP";
-                        // _ICI TON CODE 
-                        // <!-- REPRENDS LE NOM DE TES VARIABLES ET ASSIGNE LEUR LES VALEURS DE MONSIEUR LARBIN :-->
-                        // ------------  Aide toi de l'exemple juste au dessus 🤙 ------------>
-                        // ------------  N'oublie pas le point virgule ; 🤙 ------------>
+                        $id = 3.14;
+                        echo "<span class='red'>~</span>" .$id . '<br>';
                     ?>
+                    <?php
+                        $color = ["Bleu","Rouge","Vert","Jaune","Violet"];
+                        echo "<span class='red'>~</span>" .implode(", ",$color) . '<br>';
+                    ?>
+                    <?php
+                        $lifeTime = 48;
+                        echo "<span class='red'>~</span>" .$lifeTime . '<br>';
+                        ?>
+                    <?php
+                        $job = "Larbin";
+                        echo "<span class='red'>~</span>" .$job . '<br>';
+                    ?>
+                    <?php
+                        $wish = 1;
+                        echo "<span class='red'>~</span>" .$wish . '<br>';
+                        ?>
+                    <?php
+                        $rickIvention = true;
+                        echo "<span class='red'>~</span>" .$rickIvention . '<br>';
+                    ?>
+                    <?php
+                        $distinctSign = "S'évapore une fois qu'il a réalisé ton souhait.";
+                        echo "<span class='red'>~</span>" .$distinctSign . '<br>';
+                        ?>
                 </div>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
@@ -168,10 +188,9 @@ afin de te deplacer plus facilement sans te perdre
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
                         <?php
-                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            echo "<span class='red'>~</span>" .gettype($id); ?><br>
                             // _ICI TON CODE POUR VERIFIER LE TYPAGE DE TA PREMIERE VARIABLE
                             // ------------  N'oublie pas le point virgule ; 🤙 ------------>
-                        ?>
                     </div>
                 </p>
                 <hr class="my-3">
@@ -179,7 +198,7 @@ afin de te deplacer plus facilement sans te perdre
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
                         <?php
-                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            echo "<span class='red'>~</span>" .gettype($color); ?><br>;
                             // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
                         ?>
                     </div>
@@ -189,7 +208,7 @@ afin de te deplacer plus facilement sans te perdre
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
                         <?php
-                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            echo "<span class='red'>~</span>" .gettype($lifeTime); ?><br>;
                             // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
                         ?>
                     </div>
@@ -199,9 +218,8 @@ afin de te deplacer plus facilement sans te perdre
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
                         <?php
-                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            echo "<span class='red'>~</span>" .gettype($job); ?><br>
                             // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
-                        ?>
                     </div>
                 </p>
                 <hr class="my-3">
@@ -209,9 +227,8 @@ afin de te deplacer plus facilement sans te perdre
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
                         <?php
-                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            echo "<span class='red'>~</span>" .gettype($wish); ?><br>
                             // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
-                        ?>
                     </div>
                 </p>
                 <hr class="my-3">
@@ -219,9 +236,8 @@ afin de te deplacer plus facilement sans te perdre
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
                         <?php
-                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            echo "<span class='red'>~</span>" .gettype($rickIvention); ?><br>
                             // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
-                        ?>
                     </div>
                 </p>
                 <hr class="my-3">
@@ -229,9 +245,8 @@ afin de te deplacer plus facilement sans te perdre
                     <code>echo gettype(<-- $variable -->);</code> <br> => <br>
                     <div class="alert alert-my-dark" role="alert">
                         <?php
-                            echo "<span class='red'>~</span> _ICI TON CODE PHP";
+                            echo "<span class='red'>~</span>" .gettype($distinctSign); ?><br>
                             // _ICI TON CODE POUR VERIFIER LE TYPAGE DE VARIABLE SUIVANTE
-                        ?>
                     </div>
                 </p>
                 <hr class="my-3">
@@ -283,7 +298,7 @@ afin de te deplacer plus facilement sans te perdre
                     <div class="alert alert-my-dark" role="alert">
                         <?php
                             $name = "Rick";
-                            $job = "scientifique";
+                            $job = "Larbin";
                             echo "<span class='red'>~</span> Salut je suis ".$name." et je suis ".$job .".";
                         ?>
                     </div>
@@ -307,8 +322,15 @@ afin de te deplacer plus facilement sans te perdre
 
                             ** N'oublie pas de mettre ton code dans des balises PHP 🤙
                             ** N'oublie pas les points virgules ; 🤙           
-                        --> 
-                        <span class='red'>~</span> _ICI TON CODE PHP
+                        -->
+                        <?php
+                            echo "<span class='red'>~</span>"."Le " .$job. " est une invention de Rick. ".'<br>';
+                            echo "Les couleurs disponibles sont : " .implode(", ",$color). " - (Série limitée).".'<br>';
+                            echo "Vit environ " .$lifeTime. " heures.".'<br>';
+                            echo $distinctSign.'<br>';
+                            echo $wish." souhait par " .$job.".".'<br>';
+                            echo "Photo non contractuelle**. ";
+                        ?>
                     </div>
                 </p>
             </p>
@@ -363,40 +385,52 @@ afin de te deplacer plus facilement sans te perdre
                 <p>
                     <p>- Si Rick dispose de 1545 larbins violets, de 1988 larbins bleu et de 1423 larbins verts, combien a-t-il de larbins en stock ? </p>
                     <div class="alert alert-my-dark" role="alert">
-                        <span class='red'>~</span> _ICI TON CODE PHP
-                        <!-- _ICI TON CODE --> 
-                        <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                        <span class='red'>~</span>
+                        <?php
+                            $larbinsViolet = 1545;
+                            $larbinsBleus = 1988;
+                            $larbinsVerts = 1423;
+                            echo $larbinsViolet + $larbinsVerts + $larbinsBleus;
+                        ?>
+
                     </div>
                     <hr class="my-3">
                     <br>
                     <p>- Si Rick avait 78 459 larbins en stock mais que Condorman lui en commande 57 621, combien va-t-il lui en rester ? </p>
                     <div class="alert alert-my-dark" role="alert">
-                        <span class='red'>~</span> _ICI TON CODE PHP
-                        <!-- _ICI TON CODE --> 
-                        <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                        <span class='red'>~</span>
+                        <?php
+                            $larbinsStock = 78459;
+                            $commande = 57621;
+                            echo $larbinsStock - $commande;
+                        ?>
                     </div>
                     <hr class="my-3">
                     <br>
                     <p>- Si Rick a 100 larbins jaunes qui coutent 2 fois moins cher que 100 larbins bleus à 5480$, combien coûte un larbin jaune ? </p>
                     <div class="alert alert-my-dark" role="alert">
-                        <span class='red'>~</span> _ICI TON CODE PHP
-                        <!-- _ICI TON CODE --> 
-                        <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                        <span class='red'>~</span>
+                        <?php
+                            $larbinsJaunes = 5480 / 2;
+                            echo $larbinsJaunes / 100 ." $";
+                        ?>
                     </div>
                     <hr class="my-3">
                     <br>
                     <p>- Rick dispose de 17 larbins violets, s'il veut en donner 5 à Morty, 5 à Summer, 5 à sa fille et le reste à Jerry, combien de larbins va avoir Jerry ? (tips : utilise le modulo)</p>
                     <div class="alert alert-my-dark" role="alert">
-                        <span class='red'>~</span> _ICI TON CODE PHP
-                        <!-- _ICI TON CODE --> 
-                        <!-- ** N'oublie pas de mettre ton code dans des balises PHP 🤙  -->
+                        <span class='red'>~</span>
+                        <?php
+                            $larbinsViolet = 17;
+                            echo $larbinsViolet % 5;
+                        ?>
                     </div>
                     <hr class="my-3">
                     <br>
                     <p>- Bonus : Rick voudrait écrire une fonction qui lui permette d'être alerté lorsque le nombre de ses larbins en stock est inférieur ou égale à 15, tente d'écrire cette fonction :</p>
                     <div class="alert alert-my-dark" role="alert" id="5_Etape">
                     <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="</> Comments in code" data-content="Explications et astuces en commenteraire dans exercices.php mot clé : 5_Etape"><i class="fas fa-comment"></i> Comments in code</button>
-                        <span class='red'>~</span> _ICI TON CODE PHP <br>
+                        <span class='red'>~</span>
                         <?php 
                             // Il va falloir écrire une méthode CONDITIONNELLE, il faut donc utiliser if/else
                             // 1 - On initialise une variable $number avec une valeur inférieur ou égale à 15, par exemple on peut tester avec 12.
@@ -405,9 +439,11 @@ afin de te deplacer plus facilement sans te perdre
                             // cette méthode prend comme paramètre un nombre qui sera tester : $number
                             function getAlertStock($number)
                             {
-                                // <!-- _ICI TON CODE --> 
-                                // Tu peux décommenter la ligne du dessous pour actionner la méthode 
-                                // echo "Actuellement " .$number ." de larbins en stock"; 
+                                if ($number <= 15) {
+                                    echo "Actuellement " . $number . " de larbins en stock";
+                                }else {
+                                    echo "Tout est bon :D !";
+                                }
                             }
                             // 3 - On appelle la méthode pour voir ce qu'elle renvoit comme résultat
                             getAlertStock($number);
@@ -461,7 +497,7 @@ afin de te deplacer plus facilement sans te perdre
                         //    affiche 👻      
                         //  } Sinon {
                         //    affiche la valeur de secretVisible
-                        //  }"
+                        //  }
                         if (!$secretIsVisible) {
                             echo "<span class='red'>~</span> 👻";
                         } else {
@@ -472,9 +508,7 @@ afin de te deplacer plus facilement sans te perdre
                         // les pages readme / home / exercies
                         // Essaye de comprendre comment ça fonctionne tout en observant les fichiers contenu à la racine du projet
                         // qui pourraient te permettre de retrouver où se trouve le personnage caché et comment l'afficher
-                        // Tips => Rappelle toi du sens de lecture du code : toujours de haut en bas 
-
-                        // _ICI TON CODE
+                        // Tips => Rappelle toi du sens de lecture du code : toujours de haut en bas
                     ?>
                 </div>
             </div>
