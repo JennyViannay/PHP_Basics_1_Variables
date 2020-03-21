@@ -1,3 +1,5 @@
+<?php include('head.php') ?>
+
 <?php 
     $secretName = "Pickle Rick";
     $secretPowers = ["Pickle power", "Rat power", "Smarter than the rest of the world"];

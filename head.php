@@ -1,4 +1,4 @@
-<?php $secretIsVisible = false; ?>
+<?php $secretIsVisible = true; ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <?php $secretIsVisible = false; ?>
+    <?php $secretIsVisible = true; ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-grey fixed-top">
         <a class="navbar-brand navbar-brand-custom" href="index.php"><span class='red'>~</span> README.md</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
